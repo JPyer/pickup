@@ -3,7 +3,7 @@ const getWebFileArrayBuffer = async (url) => {
 }
 const getWebPcm2WavArrayBuffer = async (url) => {
   const bytes = await getWebFileArrayBuffer(url)
-  return addWavHeader(bytes, 16000, 24, 1) // 这里是当前业务需求，特定的参数，采样率16000，采样位数16，声道数1
+  return addWavHeader(bytes, 16000, 24, 1) // 这里是当前业务需求，特定的参数，采样率16000，采样位数24，声道数1
 }
 
 export function addWavHeader (samples, sampleRateTmp, sampleBits, channelCount) {
