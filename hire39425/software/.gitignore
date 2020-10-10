@@ -1,0 +1,36 @@
+# -- Temporary files ---
+*~
+*.swp
+*.bak
+*.d
+*.diff
+*.log
+*.patch
+*.tmp
+# -- Windows -----------
+Thumbs.db
+desktop.ini
+# -- MacOSX ------------
+.DS_Store
+# -- Xcode -------------
+DerivedData
+xcuserdata
+# -- MSVC --------------
+.vs
+ipch
+msbuild-out
+*.aps
+*.idc
+*.ncb
+*.opensdf
+*.pdsync
+*.sdf
+*.suo
+*.user
+*.VC.opendb
+*.VC.db
+# -- Python ------------
+__pycache__
+.idea/dictionaries
+
+AIGgen_log.txt

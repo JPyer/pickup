@@ -1,0 +1,45 @@
+Release Notes for SG Pickup
+
+V0.4.0 - 2020/9/24
+1. Fix the channel order problem.
+2. Fix DA output.
+3. Fix a fatal bug in the LAN search module that causes memory overflow when processes a bad packet.
+4. Support more command line options: sg_search.py, sg_upgrade.py, sg_audio.py.
+5. Replacing .ais flash image files with .fw firmware files.
+   .fw files are encrypted and include product info, they are more safer than .ais files.
+6. Remove AISgen_d800k008.exe .
+
+V0.3.3 - 2020/9/16
+1. Integrate the new algorithm module.
+2. Support both static IP address and DHCP.
+   Set "ip_addr" and "subnet" to enable static IP;
+   Set "ip_addr" as "0.0.0.0" to enable DHCP.
+3. To erase the device's settings,
+   In "sg-pickup" project, pull the master branch to get the latest codes.
+   Then run "sg-test" (/test/mak/ccs) in CCS,
+   and in the serial port terminal,
+   select "1":
+       1) Test hardware drivers
+   select "1":
+       1) Test NOR flash operation
+
+V0.3.2 - 2020/9/8
+1. Integrate speaker module.
+2. Close unused hardware modules to reduce power consume.
+
+V0.3.1 - 2020/9/7
+1. Modify NAU8540 ALC configuration.
+
+V0.3.0 - 2020/9/7
+1. Set NAU8540's HPF to 204Hz (register 0x38 & 0x39, value 0x1C1C).
+2. Enhance system stability.
+
+V0.2.1 - 2020/8/32
+1. Solve the problem of disconnections during audio capture.
+2. Enable the hardware watch dog.
+3. Automatic reboot after burning firmware.
+4. *** It is necessary to burn the firmware "xmodem/sg-pickup-xmodem.ais"
+   to disable the hardware watch dog before debugging the device with CCS.
+
+V0.2.0
+Initial revision.

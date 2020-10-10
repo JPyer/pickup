@@ -1,0 +1,6 @@
+djangorestframework
+djangorestframework-jwt
+django-cors-headers
+mysqlclient
+netifaces
+python-dateutil
