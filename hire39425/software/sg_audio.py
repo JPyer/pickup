@@ -46,7 +46,9 @@ def sg_get_local_ip(device_ip):
                             strict=False):
                         return ip_addr
     return None
-
+class sg_audio_file_writer:
+    # TODO wave音频格式处理函数
+    pass
 
 def sg_audio_path_builder(file_path, dev_info, audio_params, no_timestamp=False):
     localtm = time.localtime()
